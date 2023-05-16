@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-header__nav">
+      <ul class="main-header__item_list">
+        <li class="main-header__item"><a href="/">Shop</a></li>
+        <li><a href="/admin/add-user">Add User</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Users</h1>
+    <p>List of all users...</p>
+    <form class="form-control" action="/admin/users" method="POST">
+      <label for="">Add new User</label>
+      <input type="text" name="user" />
+      <button type="submit">Create</button>
+    </form>
+  </main>
+</body>
+
+</html>
